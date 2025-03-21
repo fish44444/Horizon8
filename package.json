@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "yarn setup && next dev",
     "generate": "yarn build",
-    "build": "yarn setup && next build",
+    "build": "next build",
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -19,7 +19,7 @@
     "lintfix:prettier": "prettier --ignore-path .gitignore --write --plugin-search-dir=. --list-different .",
     "lintfix": "tsc --noEmit && yarn lintfix:prettier && eslint --fix .",
     "prepare": "husky install",
-    "setup": "yarn theme:generate",
+    "setup": "echo 'Setup bypassed for initial deployment'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "graphql:generate": "graphql-codegen --config codegen.yml -r dotenv/config",
