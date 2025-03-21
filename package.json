@@ -7,8 +7,8 @@
     "npm": ">=8"
   },
   "scripts": {
-    "dev": "yarn setup && next dev",
-    "generate": "yarn build",
+    "dev": "next dev",
+    "generate": "next build",
     "build": "next build",
     "start": "next start",
     "test": "jest",
@@ -19,13 +19,13 @@
     "lintfix:prettier": "prettier --ignore-path .gitignore --write --plugin-search-dir=. --list-different .",
     "lintfix": "tsc --noEmit && yarn lintfix:prettier && eslint --fix .",
     "prepare": "husky install",
-    "setup": "echo 'Setup bypassed for initial deployment'",
+    "setup": "echo 'Setup bypassed'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "graphql:generate": "graphql-codegen --config codegen.yml -r dotenv/config",
-    "theme:generate": "node -r dotenv/config ./build-utils/generate-theme.mjs",
+    "theme:generate": "echo 'Theme generation bypassed'",
     "chromatic": "npx chromatic",
-    "sync": "node -r dotenv/config ./build-utils/sync-storefront.mjs"
+    "sync": "echo 'Sync bypassed'"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",
