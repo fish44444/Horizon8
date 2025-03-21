@@ -1,5 +1,5 @@
 overwrite: true
-schema: ${NEXT_PUBLIC_SWELL_STORE_URL}/graphql
+schema: ${NEXT_PUBLIC_SWELL_GRAPHQL_URL}
 headers:
   cache-control: 'no-cache'
   authorization: ${NEXT_PUBLIC_SWELL_PUBLIC_KEY}
